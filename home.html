@@ -2,62 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>info</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1em;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-
-        }
-
-        .container {
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        #skills {
-              font-style: italic;
-              text-decoration: underline;
-              font-size: 20px;
-
-        }
-    </style>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -66,21 +12,58 @@
 </header>
 
 <nav>
-    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<div class="container">
+<div class="container" id="about">
     <h2>About Me</h2>
-    <p id="skills">skills:</p>
-    <p>chess grand master</p>
-    <p>professional mountain climber</p>
-    <p>master chef</p>
-    <img src="https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg" width="500" height="333">
+    <p>Hello! I'm Ayman, a QA Automation tester with exceptional passion for causing a great deal of mental anguish on developers.</p>
+    <img src="https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg" alt="Profile Picture">
+</div>
+
+<div class="container" id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML5 & CSS3</li>
+        <li>Python</li>
+    </ul>
+</div>
+
+<div class="container" id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <h3>Project 1: Personal Portfolio</h3>
+            <p>A responsive portfolio website to showcase my projects and skills.</p>
+        </li>
+        <li>
+            <h3>Project 2: Library List App</h3>
+            <p>A simple and interactive library list application built with python/html.</p>
+        </li>
+    </ul>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact</h2>
+    <form action="thank.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <input type="submit" value="Submit">
+    </form>
 </div>
 
 <footer>
-    <p>this is a footer</p>
+    <p>&copy; 2024 Ayman. All rights reserved.</p>
 </footer>
 
 </body>
