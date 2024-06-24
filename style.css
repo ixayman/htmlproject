@@ -34,8 +34,8 @@ nav a:hover {
 
 .container {
     padding: 10px;
-    margin: 5px auto; /* Further reduce the margin */
-    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 5px auto; 
+    max-width: 1200px; 
 }
 
 footer {
@@ -130,7 +130,4 @@ form input[type="submit"]:hover {
         font-size: 14px;
     }
 
-    #skills {
-        font-size: 18px;
-    }
 }
